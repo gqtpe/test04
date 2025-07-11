@@ -5,8 +5,8 @@ type Props = {
   user: User
   removeUser: (userID: number) => void
 }
-
 const {user, removeUser} = defineProps<Props>()
+
 const removeHandler =(e: Event)=>{
   e.preventDefault();
   removeUser(user.id)
