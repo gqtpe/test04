@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type {User} from "@/features/Users/types/types.ts";
-import svg from './remove-ellipse-svgrepo-com.svg'
 
 type Props = {
   user: User
