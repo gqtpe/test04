@@ -49,7 +49,7 @@ const removeHandler =(e: Event)=>{
     font-size: 1.5rem;
   }
 
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   padding: 1rem;
   display: flex;
   background: var(--color-background-mute);
@@ -69,6 +69,7 @@ const removeHandler =(e: Event)=>{
   }
 
   .card__image {
+    border-radius: 1rem;
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
