@@ -1,0 +1,42 @@
+@import './base.css';
+#app {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.loader {
+  width: 24px;
+  margin: 12px auto 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid lightblue;
+  border-right-color: var(--color-fuchsia-300);
+  animation: loader 0.75s infinite linear;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+a{
+  transition: background-color, 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+  #app {
+    display: grid;
+    padding: 0 2rem;
+  }
+}
