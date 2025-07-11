@@ -1,4 +1,4 @@
-import {onBeforeUnmount, onMounted, ref, useTemplateRef, type VNodeRef, watch} from "vue";
+import {onBeforeUnmount, onMounted, useTemplateRef, type VNodeRef, watch} from "vue";
 import generateUID from "@/utils/uuid.ts";
 
 
