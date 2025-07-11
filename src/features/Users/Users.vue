@@ -15,7 +15,7 @@ const {trigger} = useEndlessLoading(triggerReached, usersStore.users)
 <template>
   <div v-if="usersStore.loading === 'pending'" class="linear-loading"></div>
   <div class="users ">
-    <div class="users__wrapper wrapper">
+    <div v-if="usersStore.users.length" class="users__wrapper wrapper">
       <UserCard
           class="col-span-4 max-sm:col-span-12"
           v-for="user in usersStore.users"
@@ -42,10 +42,11 @@ const {trigger} = useEndlessLoading(triggerReached, usersStore.users)
 }
 .wrapper {
   display: grid;
+  align-content: center;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 50vh;
   gap: 1rem;
   padding: 1rem;
+  min-height: 100vh;
 }
 .linear-loading {
   height: 4px;

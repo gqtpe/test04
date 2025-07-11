@@ -27,8 +27,6 @@ export const useUsersStore = defineStore('users', {
                     this.hideTrigger = true
                 }
             }catch(e){
-                debugger;
-                console.log(e)
                 const error = e as AxiosError
                 appStore.setAppError(error.code+'-'+error.message)
             }

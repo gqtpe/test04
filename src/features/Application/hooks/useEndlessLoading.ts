@@ -12,9 +12,6 @@ const useEndlessLoading = (c1: () => void, trackedItems: any[]) => {
         }
     };
     onMounted(() => {
-        if(trigger){
-            console.log(trigger.value)
-        }
         observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {

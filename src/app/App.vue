@@ -3,7 +3,6 @@ import useAppToasts from "@/features/Application/hooks/useAppToasts.ts";
 
 useAppToasts();
 </script>
-
 <template>
   <RouterView/>
 </template>
