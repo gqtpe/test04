@@ -1,11 +1,11 @@
 import axios from "axios";
 import type {DefaultResponse, ItemsResponse, User} from "@/features/Users/types/types.ts";
 
-
+const API_KEY = import.meta.env.VITE_API_KEY;
 const instance = axios.create({
     baseURL: "https://reqres.in/api",
     headers:{
-        'x-api-key': 'reqres-free-v1'
+        'x-api-key': API_KEY
     }
 })
 
